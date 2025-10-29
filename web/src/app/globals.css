@@ -340,6 +340,21 @@
   }
 }
 
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) scale(1);
+  }
+  25% {
+    transform: translateY(80px) translateX(-60px) scale(1.1);
+  }
+  50% {
+    transform: translateY(120px) translateX(40px) scale(0.9);
+  }
+  75% {
+    transform: translateY(60px) translateX(-80px) scale(1.05);
+  }
+}
+
 @keyframes gridMove {
   0% {
     background-position: 0px 0px;

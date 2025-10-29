@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { FloatingShapes } from "@/components/ui/floating-shapes";
 import { Mail, Phone, MapPin, Code, Server, Shield, Monitor, Palette, ShoppingCart, Map, ShieldCheck, TrendingUp, Search, Zap, Lock, Globe, MessageSquare, Star, CheckCircle, ArrowRight, ArrowDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -102,30 +103,8 @@ export default function Home() {
         </section>
 
         {/* Services Section */}
-        <section id="services" className="section bg-background relative overflow-hidden">
-          {/* Background Elements */}
-          <div className="absolute inset-0 pointer-events-none">
-            <div
-              className="absolute w-64 h-64 rounded-full blur-3xl opacity-30"
-              style={{
-                background: 'radial-gradient(circle, rgba(0, 240, 255, 0.05) 0%, rgba(0, 240, 255, 0) 70%)',
-                left: '24.65%',
-                top: '34.65%',
-                animation: 'float 8s ease-in-out infinite',
-              }}
-            />
-            <div
-              className="absolute w-80 h-80 rounded-full blur-3xl opacity-20"
-              style={{
-                background: 'radial-gradient(circle, rgba(0, 240, 255, 0.05) 0%, rgba(0, 240, 255, 0) 70%)',
-                left: '68.61%',
-                top: '61.39%',
-                animation: 'float 10s ease-in-out infinite reverse',
-              }}
-            />
-          </div>
-
-          <div className="container relative z-10">
+        <section id="services" className="section bg-background">
+          <div className="container">
             <div className="text-center space-y-4 mb-16">
               <h2 className="text-3xl md:text-4xl font-bold">Our <span>Services</span></h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -242,30 +221,8 @@ export default function Home() {
         </section>
 
         {/* Work/Portfolio Section */}
-        <section id="portfolio" className="section bg-muted/30 relative overflow-hidden">
-          {/* Background Elements */}
-          <div className="absolute inset-0 pointer-events-none">
-            <div
-              className="absolute w-72 h-72 rounded-full blur-3xl opacity-25"
-              style={{
-                background: 'radial-gradient(circle, rgba(0, 240, 255, 0.05) 0%, rgba(0, 240, 255, 0) 70%)',
-                left: '65.35%',
-                top: '24.65%',
-                animation: 'float 9s ease-in-out infinite',
-              }}
-            />
-            <div
-              className="absolute w-64 h-64 rounded-full blur-3xl opacity-20"
-              style={{
-                background: 'radial-gradient(circle, rgba(0, 240, 255, 0.05) 0%, rgba(0, 240, 255, 0) 70%)',
-                left: '21.39%',
-                top: '68.61%',
-                animation: 'float 11s ease-in-out infinite reverse',
-              }}
-            />
-          </div>
-
-          <div className="container relative z-10">
+        <section id="portfolio" className="section bg-muted/30">
+          <div className="container">
             <div className="text-center space-y-4 mb-16">
               <h2 className="text-3xl md:text-4xl font-bold">Our <span>Work</span></h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -345,19 +302,19 @@ export default function Home() {
 
                 <div className="grid grid-cols-2 gap-6 mb-8">
                   <div className="text-center">
-                    <div className="text-4xl font-bold text-primary mb-2">8+</div>
+                    <div className="text-4xl font-bold text-primary mb-2">5+</div>
                     <p className="text-sm text-muted-foreground">Years of Experience</p>
                   </div>
                   <div className="text-center">
-                    <div className="text-4xl font-bold text-primary mb-2">700+</div>
+                    <div className="text-4xl font-bold text-primary mb-2">150+</div>
                     <p className="text-sm text-muted-foreground">Projects Completed</p>
                   </div>
                   <div className="text-center">
-                    <div className="text-4xl font-bold text-primary mb-2">500+</div>
+                    <div className="text-4xl font-bold text-primary mb-2">150+</div>
                     <p className="text-sm text-muted-foreground">Happy Clients</p>
                   </div>
                   <div className="text-center">
-                    <div className="text-4xl font-bold text-primary mb-2">5</div>
+                    <div className="text-4xl font-bold text-primary mb-2">3</div>
                     <p className="text-sm text-muted-foreground">Team Members</p>
                   </div>
                 </div>
@@ -368,41 +325,13 @@ export default function Home() {
                   </Button>
                 </Link>
               </div>
-
-              <div className="relative">
-                <div className="aspect-square bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center">
-                  <span className="text-muted-foreground">Team Photo</span>
-                </div>
-              </div>
             </div>
           </div>
         </section>
 
         {/* Process Section */}
-        <section id="process" className="section bg-muted/30 relative overflow-hidden">
-          {/* Background Elements */}
-          <div className="absolute inset-0 pointer-events-none">
-            <div
-              className="absolute w-80 h-80 rounded-full blur-3xl opacity-25"
-              style={{
-                background: 'radial-gradient(circle, rgba(0, 240, 255, 0.05) 0%, rgba(0, 240, 255, 0) 70%)',
-                left: '24.65%',
-                top: '34.65%',
-                animation: 'float 10s ease-in-out infinite',
-              }}
-            />
-            <div
-              className="absolute w-72 h-72 rounded-full blur-3xl opacity-20"
-              style={{
-                background: 'radial-gradient(circle, rgba(0, 240, 255, 0.05) 0%, rgba(0, 240, 255, 0) 70%)',
-                left: '68.61%',
-                top: '61.39%',
-                animation: 'float 12s ease-in-out infinite reverse',
-              }}
-            />
-          </div>
-
-          <div className="container relative z-10">
+        <section id="process" className="section bg-muted/30">
+          <div className="container">
             <div className="text-center space-y-4 mb-16">
               <h2 className="text-3xl md:text-4xl font-bold">Our <span>Process</span></h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -429,8 +358,28 @@ export default function Home() {
                   </ul>
                 </div>
                 <div className="flex-1">
-                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center">
-                    <Search className="w-16 h-16 text-primary" />
+                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center relative overflow-hidden">
+                    <FloatingShapes
+                      shapes={[
+                        { size: 'small', position: { left: '20%', top: '30%' }, animationDuration: 8, color: 'blue' },
+                        { size: 'medium', position: { left: '70%', top: '60%' }, animationDuration: 10, animationReverse: true, color: 'blue' },
+                      ]}
+                      geometricShapes={[
+                        {
+                          size: { width: '40px', height: '40px' },
+                          position: { left: '45%', top: '20%' },
+                          borderRadius: '50% 20% 30% 60%',
+                          border: '1px solid rgba(0, 240, 255, 0.3)',
+                          animationDuration: 12,
+                          color: 'var(--primary)'
+                        }
+                      ]}
+                      dots={[
+                        { size: '4px', position: { left: '15%', top: '80%' }, animationDuration: 6, color: 'var(--secondary)' },
+                        { size: '3px', position: { left: '85%', top: '15%' }, animationDuration: 8, color: 'var(--accent)' }
+                      ]}
+                    />
+                    <Search className="w-16 h-16 text-primary relative z-10" />
                   </div>
                 </div>
               </div>
@@ -453,8 +402,29 @@ export default function Home() {
                   </ul>
                 </div>
                 <div className="flex-1">
-                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center">
-                    <MessageSquare className="w-16 h-16 text-primary" />
+                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center relative overflow-hidden">
+                    <FloatingShapes
+                      shapes={[
+                        { size: 'medium', position: { left: '15%', top: '40%' }, animationDuration: 9, color: 'pink' },
+                        { size: 'small', position: { left: '75%', top: '25%' }, animationDuration: 11, animationReverse: true, color: 'pink' },
+                      ]}
+                      geometricShapes={[
+                        {
+                          size: { width: '35px', height: '35px' },
+                          position: { left: '60%', top: '70%' },
+                          borderRadius: '20% 60% 40% 80%',
+                          border: '1px solid rgba(255, 107, 0, 0.4)',
+                          animationDuration: 15,
+                          color: 'var(--accent)'
+                        }
+                      ]}
+                      dots={[
+                        { size: '5px', position: { left: '10%', top: '10%' }, animationDuration: 7, color: 'var(--primary)' },
+                        { size: '3px', position: { left: '90%', top: '85%' }, animationDuration: 9, color: 'var(--secondary)' },
+                        { size: '2px', position: { left: '50%', top: '50%' }, animationDuration: 5, color: 'var(--accent)' }
+                      ]}
+                    />
+                    <MessageSquare className="w-16 h-16 text-primary relative z-10" />
                   </div>
                 </div>
               </div>
@@ -477,8 +447,35 @@ export default function Home() {
                   </ul>
                 </div>
                 <div className="flex-1">
-                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center">
-                    <Palette className="w-16 h-16 text-primary" />
+                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center relative overflow-hidden">
+                    <FloatingShapes
+                      shapes={[
+                        { size: 'small', position: { left: '25%', top: '20%' }, animationDuration: 7, color: 'blue' },
+                        { size: 'large', position: { left: '65%', top: '70%' }, animationDuration: 9, animationReverse: true, color: 'blue' },
+                      ]}
+                      geometricShapes={[
+                        {
+                          size: { width: '50px', height: '30px' },
+                          position: { left: '10%', top: '50%' },
+                          borderRadius: '60% 30% 70% 40%',
+                          border: '1px solid rgba(0, 240, 255, 0.3)',
+                          animationDuration: 18,
+                          color: 'var(--primary)'
+                        },
+                        {
+                          size: { width: '25px', height: '25px' },
+                          position: { left: '80%', top: '35%' },
+                          borderRadius: '30% 70% 50% 80%',
+                          border: '1px solid rgba(255, 107, 0, 0.4)',
+                          animationDuration: 14,
+                          color: 'var(--accent)'
+                        }
+                      ]}
+                      dots={[
+                        { size: '4px', position: { left: '45%', top: '85%' }, animationDuration: 6, color: 'var(--secondary)' }
+                      ]}
+                    />
+                    <Palette className="w-16 h-16 text-primary relative z-10" />
                   </div>
                 </div>
               </div>
@@ -501,8 +498,29 @@ export default function Home() {
                   </ul>
                 </div>
                 <div className="flex-1">
-                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center">
-                    <Code className="w-16 h-16 text-primary" />
+                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center relative overflow-hidden">
+                    <FloatingShapes
+                      shapes={[
+                        { size: 'large', position: { left: '10%', top: '50%' }, animationDuration: 8, color: 'pink' },
+                        { size: 'small', position: { left: '80%', top: '30%' }, animationDuration: 12, animationReverse: true, color: 'pink' },
+                      ]}
+                      geometricShapes={[
+                        {
+                          size: { width: '45px', height: '45px' },
+                          position: { left: '35%', top: '15%' },
+                          borderRadius: '40% 80% 60% 20%',
+                          border: '1px solid rgba(0, 240, 255, 0.3)',
+                          animationDuration: 16,
+                          color: 'var(--primary)'
+                        }
+                      ]}
+                      dots={[
+                        { size: '6px', position: { left: '20%', top: '75%' }, animationDuration: 8, color: 'var(--accent)' },
+                        { size: '3px', position: { left: '70%', top: '10%' }, animationDuration: 10, color: 'var(--secondary)' },
+                        { size: '4px', position: { left: '55%', top: '60%' }, animationDuration: 7, color: 'var(--primary)' }
+                      ]}
+                    />
+                    <Code className="w-16 h-16 text-primary relative z-10" />
                   </div>
                 </div>
               </div>
@@ -525,8 +543,36 @@ export default function Home() {
                   </ul>
                 </div>
                 <div className="flex-1">
-                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center">
-                    <Zap className="w-16 h-16 text-primary" />
+                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center relative overflow-hidden">
+                    <FloatingShapes
+                      shapes={[
+                        { size: 'medium', position: { left: '30%', top: '25%' }, animationDuration: 10, color: 'blue' },
+                        { size: 'small', position: { left: '60%', top: '65%' }, animationDuration: 8, animationReverse: true, color: 'blue' },
+                      ]}
+                      geometricShapes={[
+                        {
+                          size: { width: '40px', height: '40px' },
+                          position: { left: '5%', top: '30%' },
+                          borderRadius: '70% 30% 80% 20%',
+                          border: '1px solid rgba(255, 107, 0, 0.4)',
+                          animationDuration: 20,
+                          color: 'var(--accent)'
+                        },
+                        {
+                          size: { width: '30px', height: '30px' },
+                          position: { left: '75%', top: '50%' },
+                          borderRadius: '25% 75% 35% 65%',
+                          border: '1px solid rgba(0, 240, 255, 0.3)',
+                          animationDuration: 13,
+                          color: 'var(--primary)'
+                        }
+                      ]}
+                      dots={[
+                        { size: '5px', position: { left: '40%', top: '10%' }, animationDuration: 9, color: 'var(--secondary)' },
+                        { size: '3px', position: { left: '90%', top: '90%' }, animationDuration: 6, color: 'var(--primary)' }
+                      ]}
+                    />
+                    <Zap className="w-16 h-16 text-primary relative z-10" />
                   </div>
                 </div>
               </div>
@@ -727,30 +773,8 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section id="testimonials" className="section bg-muted/30 relative overflow-hidden">
-          {/* Background Elements */}
-          <div className="absolute inset-0 pointer-events-none">
-            <div
-              className="absolute w-80 h-80 rounded-full blur-3xl opacity-25"
-              style={{
-                background: 'radial-gradient(circle, rgba(0, 240, 255, 0.05) 0%, rgba(0, 240, 255, 0) 70%)',
-                left: '65.35%',
-                top: '34.65%',
-                animation: 'float 11s ease-in-out infinite',
-              }}
-            />
-            <div
-              className="absolute w-72 h-72 rounded-full blur-3xl opacity-20"
-              style={{
-                background: 'radial-gradient(circle, rgba(0, 240, 255, 0.05) 0%, rgba(0, 240, 255, 0) 70%)',
-                left: '31.39%',
-                top: '68.61%',
-                animation: 'float 13s ease-in-out infinite reverse',
-              }}
-            />
-          </div>
-
-          <div className="container relative z-10">
+        <section id="testimonials" className="section bg-muted/30">
+          <div className="container">
             <div className="text-center space-y-4 mb-16">
               <h2 className="text-3xl md:text-4xl font-bold">What <span>Our Clients Say</span></h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -822,30 +846,8 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="section bg-background relative overflow-hidden">
-          {/* Background Elements */}
-          <div className="absolute inset-0 pointer-events-none">
-            <div
-              className="absolute w-80 h-80 rounded-full blur-3xl opacity-25"
-              style={{
-                background: 'radial-gradient(circle, rgba(0, 240, 255, 0.05) 0%, rgba(0, 240, 255, 0) 70%)',
-                left: '24.65%',
-                top: '34.65%',
-                animation: 'float 12s ease-in-out infinite',
-              }}
-            />
-            <div
-              className="absolute w-72 h-72 rounded-full blur-3xl opacity-20"
-              style={{
-                background: 'radial-gradient(circle, rgba(0, 240, 255, 0.05) 0%, rgba(0, 240, 255, 0) 70%)',
-                left: '68.61%',
-                top: '61.39%',
-                animation: 'float 14s ease-in-out infinite reverse',
-              }}
-            />
-          </div>
-
-          <div className="container relative z-10">
+        <section id="contact" className="section bg-background">
+          <div className="container">
             <div className="text-center space-y-4 mb-16">
               <h2 className="text-3xl md:text-4xl font-bold">Say <span>Hello</span></h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">

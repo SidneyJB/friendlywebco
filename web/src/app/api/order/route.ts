@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
     };
 
     // TODO: Replace with your actual Zapier webhook URL
-    const ZAPIER_WEBHOOK_URL = process.env.ZAPIER_ORDER_WEBHOOK_URL || 'https://hooks.zapier.com/hooks/catch/YOUR_WEBHOOK_ID/';
+    const ZAPIER_WEBHOOK_URL = process.env.ZAPIER_ORDER_WEBHOOK_URL || 'https://hooks.zapier.com/hooks/catch/9929146/uifnlit/';
 
     try {
       // Send to Zapier

@@ -75,7 +75,7 @@ export default function OrderPage() {
             </div>
             <h2 className="text-2xl font-bold mb-4">You're All Set!</h2>
             <p className="text-muted-foreground mb-6">
-              🎉 FREE website consultation booked! We'll contact you within 24 hours with your custom quote. Remember - you pay NOTHING until your site is live and perfect!
+              Thank you for your interest in our services. We'll contact you with your custom quote and next steps.
             </p>
             <Link href="/">
               <Button>Return Home</Button>

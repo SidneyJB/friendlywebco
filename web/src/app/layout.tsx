@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { CursorEffects } from "@/components/ui/cursor-effects";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "The FriendlyWeb Company",
@@ -24,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>
+      <body className="antialiased">
         {children}
         <CursorEffects />
       </body>

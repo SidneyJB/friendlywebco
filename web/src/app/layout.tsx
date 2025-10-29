@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   description: "Professional web development and hosting services",
   keywords: "web development, hosting, websites, friendly web",
   authors: [{ name: "The FriendlyWeb Company" }],
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
     title: "The FriendlyWeb Company",
     description: "Professional web development and hosting services",

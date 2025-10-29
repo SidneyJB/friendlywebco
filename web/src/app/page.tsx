@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Mail, Phone, MapPin, Code, Server, Shield, Monitor, Palette, ShoppingCart, Map, ShieldCheck, TrendingUp, Search, Zap, Lock, Globe, MessageSquare, Star, CheckCircle, ArrowRight, ArrowDown } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 export default function Home() {
 
   return (
@@ -231,9 +232,11 @@ export default function Home() {
             </div>
 
             <div className="text-center mt-12">
-              <Button size="lg" className="text-lg px-8">
-                Start Your Free Website Today
-              </Button>
+              <Link href="/order">
+                <Button size="lg" className="text-lg px-8">
+                  Start Your Free Website Today
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -283,9 +286,6 @@ export default function Home() {
                     priority
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
-                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <Button variant="secondary">View Project</Button>
-                  </div>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Greenleaf Design</h3>
               </div>
@@ -300,9 +300,6 @@ export default function Home() {
                     height={300}
                     className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <Button variant="secondary">View Project</Button>
-                  </div>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Atlas Bookkeeping</h3>
               </div>
@@ -317,18 +314,17 @@ export default function Home() {
                     height={300}
                     className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <Button variant="secondary">View Project</Button>
-                  </div>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Evergreen Wellness</h3>
               </div>
             </div>
 
             <div className="text-center">
-              <Button size="lg" className="text-lg px-8">
-                Start Your Project
-              </Button>
+              <Link href="/order">
+                <Button size="lg" className="text-lg px-8">
+                  Start Your Project
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -366,9 +362,11 @@ export default function Home() {
                   </div>
                 </div>
 
-                <Button size="lg" className="w-full sm:w-auto">
-                  Work With Our Team
-                </Button>
+                <Link href="/order">
+                  <Button size="lg" className="w-full sm:w-auto">
+                    Work With Our Team
+                  </Button>
+                </Link>
               </div>
 
               <div className="relative">
@@ -538,9 +536,11 @@ export default function Home() {
               <p className="text-muted-foreground mb-6">
                 Whether you're just starting your first business website or need a complex web application, our process adapts to your needs while keeping things simple and stress-free.
               </p>
-              <Button size="lg" className="text-lg px-8">
-                Start Free - No Payment Required
-              </Button>
+              <Link href="/order">
+                <Button size="lg" className="text-lg px-8">
+                  Start Free - No Payment Required
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -717,9 +717,11 @@ export default function Home() {
               <p className="text-muted-foreground mb-6">
                 Get started with a professional website today - no upfront payment required. Pay only after your site goes live. Includes initial website content writing and monthly hosting & maintenance.
               </p>
-              <Button size="lg" className="text-lg px-8">
-                Start Free - No Payment Required
-              </Button>
+              <Link href="/order">
+                <Button size="lg" className="text-lg px-8">
+                  Start Free - No Payment Required
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -810,9 +812,11 @@ export default function Home() {
             </div>
 
             <div className="text-center mt-12">
-              <Button size="lg" className="text-lg px-8">
-                Join Our Happy Clients - Start Free
-              </Button>
+              <Link href="/order">
+                <Button size="lg" className="text-lg px-8">
+                  Join Our Happy Clients - Start Free
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -892,7 +896,9 @@ export default function Home() {
                     <MessageSquare className="w-6 h-6 text-primary mt-1" />
                     <div>
                       <h3 className="font-semibold">Want to discuss things in depth?</h3>
-                      <Button className="mt-2">Book a free 15-Minute Consultation</Button>
+                      <Link href="/order">
+                        <Button className="mt-2">Book a free 15-Minute Consultation</Button>
+                      </Link>
                     </div>
                   </div>
                 </div>

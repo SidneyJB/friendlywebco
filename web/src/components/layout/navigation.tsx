@@ -6,13 +6,13 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const navigationItems = [
-  { href: "#services", label: "Services" },
-  { href: "#portfolio", label: "Work" },
-  { href: "#about", label: "About" },
-  { href: "#process", label: "Process" },
-  { href: "#basic-package", label: "What's Included" },
-  { href: "#testimonials", label: "Testimonials" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#services", label: "Services" },
+  { href: "/#portfolio", label: "Work" },
+  { href: "/#about", label: "About" },
+  { href: "/#process", label: "Process" },
+  { href: "/#basic-package", label: "What's Included" },
+  { href: "/#testimonials", label: "Testimonials" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export function Navigation() {
@@ -47,9 +47,11 @@ export function Navigation() {
                   </li>
                 ))}
                 <li>
-                  <Button className="w-full mt-4" size="sm">
-                    Get Started
-                  </Button>
+                  <Link href="/order">
+                    <Button className="w-full mt-4" size="sm">
+                      Get Started
+                    </Button>
+                  </Link>
                 </li>
               </ul>
             </nav>

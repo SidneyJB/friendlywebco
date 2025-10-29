@@ -18,21 +18,14 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ["lucide-react", "@radix-ui/react-slot"],
   },
 
-  // Image optimization
+  // Image optimization for Vercel
   images: {
+    // Vercel handles local images automatically, no domains needed
+    domains: [],
     formats: ["image/webp", "image/avif"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 60,
-    // Allow images from the same domain and common CDNs
-    domains: ['friendlyweb.co', 'www.friendlyweb.co'],
-    // Allow remote patterns for any HTTPS images
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**',
-      },
-    ],
   },
 
   // Bundle analyzer configuration (when ANALYZE=true)
@@ -79,7 +72,7 @@ const nextConfig: NextConfig = {
               "default-src 'self'",
               "script-src 'self' 'unsafe-eval' 'unsafe-inline' js.static.spiffy.co *.spiffy.co *.google-analytics.com *.googletagmanager.com",
               "style-src 'self' 'unsafe-inline' *.spiffy.co",
-              "img-src 'self' blob: data: https: *.spiffy.co *.google-analytics.com",
+              "img-src 'self' blob: data: https: *.spiffy.co *.google-analytics.com *.vercel.app",
               "font-src 'self' *.spiffy.co",
               "connect-src 'self' *.spiffy.co *.google-analytics.com *.googletagmanager.com",
               "frame-src 'self' *.spiffy.co",

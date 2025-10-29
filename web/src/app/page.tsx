@@ -280,6 +280,8 @@ export default function Home() {
                     width={400}
                     height={300}
                     className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                    priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <Button variant="secondary">View Project</Button>

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Mail, Phone, MapPin, Code, Server, Shield, Monitor, Palette, ShoppingCart, Map, ShieldCheck, TrendingUp, Search, Zap, Lock, Globe, MessageSquare, Star, CheckCircle, ArrowRight, ArrowDown } from "lucide-react";
+import Image from "next/image";
 export default function Home() {
 
   return (
@@ -273,9 +274,11 @@ export default function Home() {
               {/* Project 1 */}
               <div className="group">
                 <div className="relative overflow-hidden rounded-lg mb-4">
-                  <img
+                  <Image
                     src="/greenleaf.png"
                     alt="Greenleaf Design project screenshot"
+                    width={400}
+                    height={300}
                     className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -288,9 +291,11 @@ export default function Home() {
               {/* Project 2 */}
               <div className="group">
                 <div className="relative overflow-hidden rounded-lg mb-4">
-                  <img
+                  <Image
                     src="/atlas.png"
                     alt="Atlas Bookkeeping project screenshot"
+                    width={400}
+                    height={300}
                     className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -303,9 +308,11 @@ export default function Home() {
               {/* Project 3 */}
               <div className="group">
                 <div className="relative overflow-hidden rounded-lg mb-4">
-                  <img
+                  <Image
                     src="/yoga.png"
                     alt="Evergreen Wellness project screenshot"
+                    width={400}
+                    height={300}
                     className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">

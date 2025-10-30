@@ -291,7 +291,7 @@ export default function Home() {
           <div className="container">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">About The FriendlyWeb Company</h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="max-w-4xl mx-auto text-center">
               <div>
                 <p className="text-lg text-muted-foreground mb-6">
                   We've been building websites since 2015, helping small businesses look great online and connect with more people. From design and development to branding and marketing, we handle the whole package—without making things complicated.
@@ -358,7 +358,7 @@ export default function Home() {
                   </ul>
                 </div>
                 <div className="flex-1">
-                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center relative overflow-hidden">
+                  <div className="aspect-square md:aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center relative overflow-hidden">
                     <FloatingShapes
                       shapes={[
                         { size: 'small', position: { left: '20%', top: '30%' }, animationDuration: 8, color: 'blue' },
@@ -402,7 +402,7 @@ export default function Home() {
                   </ul>
                 </div>
                 <div className="flex-1">
-                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center relative overflow-hidden">
+                  <div className="aspect-square md:aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center relative overflow-hidden">
                     <FloatingShapes
                       shapes={[
                         { size: 'medium', position: { left: '15%', top: '40%' }, animationDuration: 9, color: 'pink' },
@@ -447,7 +447,7 @@ export default function Home() {
                   </ul>
                 </div>
                 <div className="flex-1">
-                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center relative overflow-hidden">
+                  <div className="aspect-square md:aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center relative overflow-hidden">
                     <FloatingShapes
                       shapes={[
                         { size: 'small', position: { left: '25%', top: '20%' }, animationDuration: 7, color: 'blue' },
@@ -498,7 +498,7 @@ export default function Home() {
                   </ul>
                 </div>
                 <div className="flex-1">
-                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center relative overflow-hidden">
+                  <div className="aspect-square md:aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center relative overflow-hidden">
                     <FloatingShapes
                       shapes={[
                         { size: 'large', position: { left: '10%', top: '50%' }, animationDuration: 8, color: 'pink' },
@@ -543,7 +543,7 @@ export default function Home() {
                   </ul>
                 </div>
                 <div className="flex-1">
-                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center relative overflow-hidden">
+                  <div className="aspect-square md:aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center relative overflow-hidden">
                     <FloatingShapes
                       shapes={[
                         { size: 'medium', position: { left: '30%', top: '25%' }, animationDuration: 10, color: 'blue' },
@@ -764,7 +764,7 @@ export default function Home() {
                 Get started with a professional website today - no upfront payment required. Pay only after your site goes live. Includes initial website content writing and monthly hosting & maintenance.
               </p>
               <Link href="/order">
-                <Button size="lg" className="text-lg px-8">
+                <Button size="lg" className="text-sm md:text-lg px-4 md:px-8 w-full max-w-sm mx-auto">
                   Start Free - No Payment Required
                 </Button>
               </Link>
@@ -837,7 +837,7 @@ export default function Home() {
 
             <div className="text-center mt-12">
               <Link href="/order">
-                <Button size="lg" className="text-lg px-8">
+                <Button size="lg" className="text-sm md:text-lg px-4 md:px-8 w-full max-w-sm mx-auto">
                   Join Our Happy Clients - Start Free
                 </Button>
               </Link>

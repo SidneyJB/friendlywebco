@@ -5,33 +5,51 @@ import { useEffect, useState } from "react";
 export function CursorEffects() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
 
   useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-      setIsVisible(true);
+    // Check if device is mobile/tablet
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768 || 'ontouchstart' in window);
     };
 
-    const handleMouseLeave = () => {
-      setIsVisible(false);
-    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
 
-    const handleMouseEnter = () => {
-      setIsVisible(true);
-    };
+    // Only add mouse listeners if not mobile
+    if (!isMobile) {
+      const handleMouseMove = (e: MouseEvent) => {
+        setMousePosition({ x: e.clientX, y: e.clientY });
+        setIsVisible(true);
+      };
 
-    document.addEventListener('mousemove', handleMouseMove);
-    document.addEventListener('mouseleave', handleMouseLeave);
-    document.addEventListener('mouseenter', handleMouseEnter);
+      const handleMouseLeave = () => {
+        setIsVisible(false);
+      };
+
+      const handleMouseEnter = () => {
+        setIsVisible(true);
+      };
+
+      document.addEventListener('mousemove', handleMouseMove);
+      document.addEventListener('mouseleave', handleMouseLeave);
+      document.addEventListener('mouseenter', handleMouseEnter);
+
+      return () => {
+        document.removeEventListener('mousemove', handleMouseMove);
+        document.removeEventListener('mouseleave', handleMouseLeave);
+        document.removeEventListener('mouseenter', handleMouseEnter);
+        window.removeEventListener('resize', checkMobile);
+      };
+    }
 
     return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-      document.removeEventListener('mouseleave', handleMouseLeave);
-      document.removeEventListener('mouseenter', handleMouseEnter);
+      window.removeEventListener('resize', checkMobile);
     };
-  }, []);
+  }, [isMobile]);
 
-  if (!isVisible) return null;
+  // Don't render on mobile devices
+  if (isMobile || !isVisible) return null;
 
   return (
     <>
